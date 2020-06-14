@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "ba8ce0a9-3dee-4ecf-b8bd-23d2889cd133",
+		"name": "BestBuy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"name\": \"Duracell - AAABBBBB Batteries (4-Pack)\",\r\n  \"type\": \"HardGood\",\r\n  \"price\": 5.49,\r\n  \"upc\": \"aaa\",\r\n  \"shipping\": null,\r\n  \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\r\n  \"manufacturer\": \"Duracell\",\r\n  \"model\": \"MN2400B4Z\",\r\n  \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\r\n  \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\r\n  \"createdAt\": \"2020-05-31T19:59:45.811Z\",\r\n  \"updatedAt\": \"2020-05-31T19:59:45.811Z\",\r\n  \"categories\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/products/9999683",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"9999683"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/products/9999684",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products",
+						"9999684"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \r\n            \"name\": \"Duracell - AAA11111 Batteries (4-Pack)\",\r\n            \"type\": \"HardGood\",\r\n            \"price\": 5.49,\r\n         \"upc\":\"aaa\",\r\n            \"shipping\": 0,\r\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\r\n            \"manufacturer\": \"Duracell\",\r\n            \"model\": \"MN2400B4Z\",\r\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\r\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/stores?$limit=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stores"
+					],
+					"query": [
+						{
+							"key": "$limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "53b10353-479f-4e79-b453-0bac8820eee9",
+		"name": "Upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Single",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profile",
+							"type": "file",
+							"src": [
+								"/C:/Users/User/Downloads/setting.png",
+								"/C:/Users/User/Downloads/883039.png",
+								"/C:/Users/User/Downloads/Brai2.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/fileupload/Single",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"fileupload",
+						"Single"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profiles",
+							"type": "file",
+							"src": [
+								"/C:/Users/User/Downloads/setting.png",
+								"/C:/Users/User/Downloads/883039.png",
+								"/C:/Users/User/Downloads/Brai2.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/fileupload/bulk",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"fileupload",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

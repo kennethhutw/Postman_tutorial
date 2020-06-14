@@ -1,0 +1,190 @@
+{
+	"id": "a4e06919-bdbd-4114-a1f4-e6ac313199ee",
+	"name": "Trello",
+	"timestamp": "2020-06-11T00:26:31.724Z",
+	"collection_id": "9f12af9d-6372-4420-8ee3-5102196a80de",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"totalFail": 9,
+	"results": [
+		{
+			"id": "2ab386e8-bbc8-4784-84bc-8a8f3bdcf586",
+			"name": "Create Board",
+			"url": "https://api.trello.com/1/boards/?name=My%20new%20Board&key=146af606ecc47b275b3ac967fd5b07f3&token=760dfeda6d84166a06c81375af1197b13e41d60c86bfc8e8f4e02eed188b166c&defaultLists=false",
+			"time": 3282,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Board should be created": true,
+				"Board should be private": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board should be created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Board should be private": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3282
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Board should be created": true,
+					"Board should be private": true
+				}
+			]
+		},
+		{
+			"id": "9be2f7a2-7982-4150-8a08-a6eb255745ed",
+			"name": "Create TODO List",
+			"url": "https://api.trello.com/1/lists?name=TODO&idBoard=5eded55052bf125cb018dec8&key=146af606ecc47b275b3ac967fd5b07f3&token=760dfeda6d84166a06c81375af1197b13e41d60c86bfc8e8f4e02eed188b166c",
+			"time": 277,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"List should be created": false,
+				"List was created inside the board": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"List should be created": {
+					"pass": 0,
+					"fail": 1
+				},
+				"List was created inside the board": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				277
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"List should be created": false,
+					"List was created inside the board": false
+				}
+			]
+		},
+		{
+			"id": "81704e66-2bd4-4bc3-9bfc-e18335e0a7f6",
+			"name": "Create DONE List",
+			"url": "https://api.trello.com/1/lists?name=TODO&idBoard=5eded55052bf125cb018dec8&key=146af606ecc47b275b3ac967fd5b07f3&token=760dfeda6d84166a06c81375af1197b13e41d60c86bfc8e8f4e02eed188b166c",
+			"time": 368,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"List should be created": false,
+				"List was created inside the board": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"List should be created": {
+					"pass": 0,
+					"fail": 1
+				},
+				"List was created inside the board": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				368
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"List should be created": false,
+					"List was created inside the board": false
+				}
+			]
+		},
+		{
+			"id": "bf06c6c6-7481-4808-b650-a6de92dbeae7",
+			"name": "Create a Card",
+			"url": "https://api.trello.com/1/cards?idList=5eded5e1eac3266e23453783&name=Learn%20Postman&key=146af606ecc47b275b3ac967fd5b07f3&token=760dfeda6d84166a06c81375af1197b13e41d60c86bfc8e8f4e02eed188b166c",
+			"time": 358,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Card should be created": false,
+				"Card should have no votes or attachments": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Card should be created": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Card should have no votes or attachments": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				358
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Card should be created": false,
+					"Card should have no votes or attachments": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4285,
+	"collection": {
+		"requests": [
+			{
+				"id": "2ab386e8-bbc8-4784-84bc-8a8f3bdcf586",
+				"method": "POST"
+			},
+			{
+				"id": "9be2f7a2-7982-4150-8a08-a6eb255745ed",
+				"method": "POST"
+			},
+			{
+				"id": "81704e66-2bd4-4bc3-9bfc-e18335e0a7f6",
+				"method": "POST"
+			},
+			{
+				"id": "bf06c6c6-7481-4808-b650-a6de92dbeae7",
+				"method": "POST"
+			}
+		]
+	}
+}
